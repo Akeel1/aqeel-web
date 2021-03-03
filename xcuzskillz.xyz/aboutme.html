@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from xcuzskillz.xyz/aboutme.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Mar 2021 18:40:33 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/aboutme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Aqeel Abdulrazzaq Profile">
+    <meta name="keywords" content="Aqeel Abdulrazzaq, Discord">
+    <meta name="author" content="Aqeel Abdulrazzaq">    
+    <title>Aqeel Abdulrazzaq - AboutMe</title>
+</head>
+<body>
+    <div  id="nav-div">
+        <nav class="navbar" >
+            <div class="logo-nav" >
+                <h1>A</h1>
+            </div>
+            <a href="#" class="toggle-button" >
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+            <div class="navbar-links" >
+              <ul hidden>
+                <li><a href="#" style="color: rgb(167, 167, 167);">Home</a></li>
+                <li><a href="skills.html">My Skills</a></li>
+                <li><a href="work.html">My Work</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+    <div class="slide-navbar">
+        <div class="brand-letter">
+    <br>
+    <h1 class="letter-name">A</h1>
+        <br>
+            <hr>
+                <br>
+                <div class="nav-bar-elements">
+                    <a href="index-2.html"><i class="far fa-home" title="Home"></i></a>
+                          <br>
+                     <a href="work.html"> <i class="fas fa-browser"  title="My work"></i></a>
+                          <br> 
+                     <a href="skills.html"> <i class="fas fa-atom" title="skills"></i></a>
+                          <br>
+                   <a href="aboutme.html"> <i class="fas fa-person-sign"  title="About me"></i></a>
+                          <br>
+                     <a href="contact.html"> <i class="fas fa-mailbox" title="Contact Me"></i></a>
+                          <br>
+                      <div class="social-links">
+               <a href="https://twitter.com/idqb_"><i class="fab fa-twitter"></i></a>
+                      <br>
+                 <a href="https://www.youtube.com/channel/UC8ndgjhfs2jy6e1VLyBz4Fw"> <i class="fab fa-youtube"></i></a>
+                      <br>
+                <a href="https://github.com/Akeel1"><i class="fab fa-github"></i></a>
+                      <br>
+               <a href="https://discord.com/users/142665801894199296"> <i class="fab fa-discord"></i></a>
+              </div>
+          </div>
+        </div>
+    </div>
+    <section class="about-section">
+        <h1><i class="fas fa-pennant"></i> About Me</h1>
+        <p>My name is Aqeel Abdulrazzaq from Iraq, a lover of technology,coding <br>and playing video games. </p>
+        <br>
+        <p>I Love to play video games with friends and watching TV series and movies;) maybe this what <br>I do my whole time
+        I always discovre new things on coding and like to learn it and sharing it with friends.</p>
+        <br>
+        <p>Right now I am studying at High School at 4th grade and I am going to finish school after 2 year from now.</p>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="scripts/all.min.js"></script>
+    <script>
+        fetch('https://api.itariq.dev/fetch/323930938125844480?type=user')
+        .then(res => res.json())
+        .then(data => {
+            var image = document.getElementById('xc-img')
+            var userName = document.getElementById('username')
+            image.src = data.displayAvatarURLDynamic
+            userName.innerHTML = data.username
+            console.log(data.flags.toArray().map(f => f))
+        })
+
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+const Navbar = document.getElementById('nav-div')
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+    </script>
+</body>
+</body>
+
+<!-- Mirrored from xcuzskillz.xyz/aboutme.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Mar 2021 18:40:34 GMT -->
+</html>

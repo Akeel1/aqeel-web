@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    animation: transitionIn 0.75s;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background:  #15181a;
+    background-image: url('../../cdn.discordapp.com/attachments/551821711419375616/811711604005535744/xcuzskillz2.png');
+    background-repeat: no-repeat;
+    background-size: 1920px 950px;
+}
+input, textarea, button, select{
+    font-family: 'Roboto', sans-serif;
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    display: none;
+    background-color: rgb(57, 242, 255);
+}
+
+.logo-nav {
+    font-size: 20px;
+    margin: .5rem;
+    color: rgb(57, 242, 255);
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+    padding-right: 90px;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+    padding-right: 20px;
+}
+
+.navbar-links a:hover {
+    color: rgb(57, 242, 255);
+}
+.logo-nav{
+    padding-left: 30px;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+.slide-navbar{
+   background-color: #2C2F33; 
+   height: 100vh;
+   display: inline-block;
+   min-width: 7vh;
+   position: relative;
+}
+.brand-letter{
+    height: max-content;
+    background-color: #2C2F33;
+}
+.nav-bar-elements a{
+    color: #fff;
+}
+.letter-name{
+    font-size: 60px;
+    transition: 0.2s;
+    text-align: center;
+}
+.letter-name:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    color: rgb(57, 242, 255);
+}
+.social-links{
+    vertical-align: bottom;
+    margin-top: 295%;
+}
+.nav-bar-elements{
+    margin-top: 192%;
+    text-align: center;
+
+    font-size: 26px;
+}
+.fa-youtube, .fa-twitter, .fa-github{
+    margin-bottom: 10px;
+}
+.fa-home, .fa-mailbox, .fa-person-sign, .fa-browser, .fa-atom{
+    margin-bottom: 17px;
+    transition: 0.2s;
+}
+.fa-home{
+    color: rgb(57, 242, 255);
+}
+.fa-atom:hover{
+    color: rgb(57, 242, 255);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.fa-home:hover{
+    color: rgb(57, 242, 255);
+    cursor: pointer; 
+    transition: 0.2s;
+   
+}
+.fa-mailbox:hover{
+    color: rgb(57, 242, 255);
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+.fa-person-sign:hover{
+    color: rgb(57, 242, 255);
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+.fa-browser:hover{
+    color: rgb(57, 242, 255);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.text-contect{
+    color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 34px;
+    margin-top: 11.5%;
+    margin-left: 10%;
+}
+.text-contect p{
+    color: #686868;
+    font-size: 23px;
+}
+.logo-brand{
+    vertical-align: top;
+    margin-left: 20%;
+    margin-top: 10%;
+    font-size: 75px;
+    width: 350px;
+    background-color: #2C2F33;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 12px 22px;
+}
+.logo-brand p{
+    font-size: 40px;
+    margin-bottom: 3%;
+    text-align: center;
+}
+#xc-img{
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+}
+.cnt-btn{
+    background: transparent;
+    border: 2px solid  rgb(57, 242, 255);
+    color: rgb(53, 175, 184);
+    border-radius: 5px;
+    font-size: 21px;
+    padding: 12px 42px;
+    transition: 0.2s;
+
+}
+.cnt-btn:hover{
+     background-color: rgb(57, 242, 255);
+     color: rgb(0, 0, 0);
+     cursor: pointer;
+     transition: 0.2s;
+}
+.cnt-btn:focus{
+    outline: none;
+}
+.btn-discord{
+    text-align: center;
+    padding: 12px 22px;
+}
+.btn-discord{
+    background: transparent;
+    border: 2px solid  #7289DA;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 12px 12px;
+    transition: 0.2s;
+}
+.btn-discord:focus{
+    outline: none;
+}
+.btn-discord:hover{
+    background-color: #7289DA;
+    cursor: pointer;
+}
+#ds-discord{
+    font-size: 21px;
+}
+.created-items{
+    margin-left: 10%;
+    vertical-align: top;
+}
+.cnt-btn{
+    margin-bottom: 60px;
+}
+footer{
+    background-color: #1f2124; 
+    height: auto;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+footer h2{
+    color: #b6b6b6;
+    margin-bottom: 1%;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(141, 140, 140);
+    margin-top: 6%;
+    transition: 0.4s;
+}
+footer a:hover{
+    color: rgb(57, 242, 255);
+    transition: 0.4s;
+    border-bottom: 2px solid rgb(57, 242, 255);
+}
+.rights{
+    text-align: center;
+}
+footer .fa-github{
+    color: rgb(117, 117, 117);
+    float: right;
+    font-size: 35px;
+    margin-right: 30%;
+}
+
+@media screen and (max-width: 700px){
+    .logo-brand{
+        width: 300px;
+        margin-bottom: 5%;
+        margin-left: 10%;
+    }
+    .slide-navbar{
+        height: 150vh;
+        display: none;
+    }
+    .text-contect{
+        margin-bottom: 1%;
+    }
+    body{
+        background-image: url('../../cdn.discordapp.com/attachments/551821711419375616/811711604005535744/xcuzskillz2.png');
+        background-repeat: no-repeat;
+        background-size: 2100px 1250px;
+    }
+        .navbar {
+            display: contents;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .toggle-button {
+            display: flex;
+        }
+    
+        .navbar-links {
+            display: none;
+            width: 120%;
+        }
+    
+        .navbar-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+    
+        .navbar-links ul li {
+            text-align: center;
+        }
+    
+        .navbar-links ul li a {
+            padding: .5rem 1rem;
+        }
+    
+        .navbar-links.active {
+            display: flex;
+        }  
+        
+        .logo-brand{
+            height: 60vh;
+            font-size: 12px;
+        }
+        .btn-discord{
+            background: transparent;
+            border: 2px solid  #7289DA;
+            color: rgb(255, 255, 255);
+            border-radius: 5px;
+            font-size: 18px;
+            margin-top: 15%;
+            padding: 12px 8px;
+            transition: 0.2s;
+        }
+        .text-contect{
+            color: #fff;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 24px;
+            margin-top: 11.5%;
+            margin-left: 10%;
+        }
+        .text-contect p{
+            color: #686868;
+            font-size: 16px;
+        }
+}
